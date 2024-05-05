@@ -6,7 +6,7 @@
 
       <loc>http://www.retirementcalculate.com/</loc>
 
-      <lastmod>2024-5-5</lastmod>
+      <lastmod>2024-05-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -26,11 +26,11 @@
 
    <url>
 
-      <loc>http://www.example.com/how-to-start.html</loc>
+      <loc>http://www.retirementcalculate.com/how-to-start.html</loc>
 
-      <lastmod>2024-5-5</lastmod>
+      <lastmod>2024-05-05</lastmod>
 
-      <changefreq>mnthly</changefreq>
+      <changefreq>monthly</changefreq>
 
         <priority>0.6</priority>
    </url>
