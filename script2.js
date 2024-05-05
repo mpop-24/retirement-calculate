@@ -39,7 +39,7 @@ function needed(e){
         const num1 = R.toFixed(0)
         text.innerText = `If you invest in S&P 500, at retirement you will need: $${formatNumberWithCommas(num)}`;
         text2.innerText  = `To achieve this, you will need to save $${formatNumberWithCommas(num1)} per month.`
-        text3.innerText = '*Disclaimer:'
+        //text3.innerText = '*Disclaimer:'
     } catch (error) {
         console.error(error);
     }
