@@ -156,17 +156,17 @@ body{
     padding-bottom: 10px;
 }
 
-#text, #text2 {
+#text, #text2,#text3 {
     text-align: center;
     margin-top: 0%;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
   }
 
 .results a{
   display: inline-block;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: normal;
 }
 
