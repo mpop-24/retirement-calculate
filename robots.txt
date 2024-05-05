@@ -1,0 +1,4 @@
+# robots.txt for https://retirementcalculate.com
+Sitemap: https://retirementcalculate.com/sitemap.xml
+User-agent: * 
+Disallow: /error-pages

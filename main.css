@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+*{
+  font-family: sans-serif;
+  color: black;
+}
+body{
+  margin: 0;
+}
+.header1{
+  animation-name: slideInRight;
+  animation-duration: 0.5s;
+  text-align: center;
+}
+.header a{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.navbar{
+  animation-name: slideInLeft;
+  animation-duration: 0.5s;
+  padding-top: 10px;
+    text-align: center;
+    font-weight: 300;
+    height: 100px;
+}
+
+.navbar li{
+    padding-bottom: 10px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.navbar li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.navbar li a::after{
+  content: '';
+  height: 2.5px;
+  width: 100%;
+  background-color:rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.navbar li a:hover::after{
+  opacity: 1;
+}
+
+.navbar li a:active::after{
+  opacity: 1;
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px; 
+  }
+
+.calculator {
+  animation-name: slideInLeft;
+  animation-duration: 0.5s;
+    margin-left: 20px;
+    min-width: 40%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+.heading h3 {
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+.input-group {
+    margin: 20px 0;
+  }
+  
+.input-group label {
+  margin-bottom: 5px;
+  font-size:15px;
+    display: block;
+    font-weight: 300;
+  }
+  
+.input-group input,
+.input-grpup select,
+.input-group button{
+  text-align: center;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 2.5px;
+  }
+  
+.input-group input{
+  width: 200px;
+}
+.input-group select{
+  font-family:sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 3px;
+  width: 225px;
+  height: 40px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.input-group button {
+    display: inline-block;
+    margin-left: 10px;
+    max-width: 100%;
+    width: 200px;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 2.5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+.results{
+    animation-name: slideInRight;
+    animation-duration: 0.5s;
+    box-shadow: 0px 0px 10px 3px rgb(100, 100, 100);
+    background-color: white;
+    width: 650px;
+    height: 350px;
+    padding: 20px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#text {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 25px;
+    font-weight: normal;
+  }
+#text2 {
+  font-size: 17px;
+}
+#text3{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.results a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: normal;
+}
+.article{
+  
+  text-align: center;
+}
+.article h3{
+  animation-name: slideInRight;
+  animation-duration: 0.75s;
+  font-weight: 300;
+  font-size: 30px;
+}
+.article-text{
+  animation-name: slideInLeft;
+  animation-duration: 0.75s;
+  font-weight: 300;
+  display: inline-block;
+  margin-top: 45px;
+  margin-left: 45px;
+  text-align: left;
+  width: 700px;
+  font-size: 22.5px;
+  font-weight: 275px;
+}
+@media (min-width: 1060px){
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 30px; 
+    }
+  .results{
+    margin-right: 30px;
+  }
+  .calculator{
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1060px){
+  .container {
+    display: block;
+    text-align: center;
+  }
+
+  .calculator{
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+  }
+  .input-group button{
+    display: inline-block;
+    margin: auto;
+  }
+  .results{
+    display: inline-block;
+  }
+}
+@media (max-width: 975px){
+    .bg-image{
+        width: 100vw;
+        height: 400px;
+    }
+    img{
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 745px){
+  .results{
+    width:550px;
+    height: 350px;
+  }
+}
+@media (max-width: 700px){
+  .article-text{
+    margin: auto;
+    text-align: center;
+    width: 650px;
+}
+@media (max-width: 635px){
+  .results{
+    text-align: center;
+    width:450px;
+    height: 250px;
+  }
+  .article-text{
+    width: 600px;
+}
+}
+
+@media (max-width: 655px) {
+    .bg-image{
+        width: 100vw;
+        height: 300px;
+    }
+    img{
+        width: 100vw;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+}
+@media (max-width: 530px){
+  .results{
+    text-align: center;
+    width:350px;
+    height: 175px;
+  }
+  #text {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .article-text{
+    width: 500px;
+}
+
+.results a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+}
+@media (max-width: 485px){
+    .bg-image{
+        width: 100vw;
+        height: 200px;
+    }
+    img{
+        width: 100vw;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 425px){
+  .results{
+    width: 300px;
+    height: 150px;
+  }
+  .article-text{
+    width: 350px;
+}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4552328501492413"
+     crossorigin="anonymous"></script>
+    <div class="header1">
+     <div class="header"><a href="index.html">Retirement Calculator</a></div>
+    </div>
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">Calculator</a></li>
+        <li><a href="need.html">How much do I need</a></li>
+        <li><a href="how.html">How to start</a></li>
+    </ul>
+</div>
+<section class="container">
+   <div class="calculator">
+        <div class="heading">
+            <h3>Calculator</h3>
+        </div>
+        <form action="" id="retirement-form">
+            <div class="input-group">
+                <label for="initial-amount">How Much Is In Your Retirement Account(s) Today?</label>
+                <input type="number" id="initial-amount">
+            </div>
+            <div class="input-group">
+                <label for="investment-years">How Many Years Until You Plan To Retire?</label>
+                <input type="number" id="years">
+            </div>
+            <div class="input-group">
+                <label for="rates">What Kind Of Investor Are You?</label>
+                <select id="rates">
+                    <option value="7">Moderate (7%)</option>
+                    <option value="4">Conservative (4%)</option>
+                    <option value="10">Aggressive (10%)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="freq-contrib">How Frequently Do You Contribute?</label>
+                <select id="freq">
+                    <option value="52">Weekly</option>
+                    <option value="12">Monthly</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="contribution">How Much Do You Contribute?</label>
+                <input type="number" id="contribution">
+            </div>
+            <div class="input-group">
+                <button>Calculate</button>
+            </div>
+        </form>
+    </div>
+    <div class="results">
+        <h3 id="text"></h3>
+        <h3 id="text3"></h3>
+        <a href="how.html" id="text2">How do I start?</a>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

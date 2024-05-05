@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+*{
+  
+  font-family: sans-serif;
+  color: black;
+}
+body{
+  margin: 0;
+}
+.header1{
+  margin-top: 15px;
+  animation-name: slideInRight;
+  animation-duration: 0.75s;
+  text-align: center;
+}
+.header a{
+  align-self: center;
+  font-family: 'Bebas Neue',sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.navbar{
+  animation-name: slideInLeft;
+  animation-duration: 0.75s;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 300;
+  height: 100px;
+}
+
+.label1{
+  padding-bottom: 10px;
+}
+.navbar li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.navbar li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+}
+
+.navbar li a::after{
+  content: '';
+  height: 2.5px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.navbar li a:hover::after{
+  opacity: 1;
+}
+
+.navbar li a:active::after{
+  opacity: 1;
+}
+
+.container {
+  margin-top: 60px;
+    display: block;
+    align-items: center;
+  }
+
+.calculator {
+    animation-name: slideInLeft;
+    animation-duration: 0.75s;
+    margin-left: 20px;
+    min-width: 40%;
+    padding: 20px;
+    display: inline-block;
+}
+  
+.heading h3 {
+  font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+  }
+  
+.input-group {
+    margin: 20px 0;
+  }
+  
+.input-group label {
+    font-weight: 300; 
+    display: block;
+  }
+  
+.input-group input,
+.input-group button{
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 2.5px;
+  }
+  
+.input-group input{
+    width: 200px;
+}
+
+.input-group button {
+    display: inline-block;
+    margin-left: 10px;
+    max-width: 100%;
+    width: 200px;
+    padding: 12px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 2.5px;
+    background-color: black;
+    color: white;
+  }
+
+.results{
+  animation-name: slideInRight;
+  animation-duration: 0.75s;
+    box-shadow: 0px 0px 10px 3px rgb(100, 100, 100);
+    width: 650px;
+    margin-top: 50px;
+    height: 350px;
+    padding: 20px;
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#text, #text2 {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+.results a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (min-width: 1060px){
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    }
+  .results{
+    margin-right: 30px;
+  }
+  .calculator{
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1060px){
+  .container {
+    display: block;
+    text-align: center;
+  }
+
+  .calculator{
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+  }
+  .input-group button{
+    display: inline-block;
+    margin: auto;
+  }
+  .results{
+    display: inline-block;
+  }
+}
+
+@media (max-width: 745px){
+  .results{
+    width:550px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 635px){
+  .results{
+    text-align: center;
+    width:450px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 530px){
+  .results{
+    text-align: center;
+    width:350px;
+    height: 175px;
+  }
+  #text {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+.results a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+}
+
+@media (max-width: 425px){
+  .results{
+    width: 300px;
+    height: 150px;
+  }
+}
