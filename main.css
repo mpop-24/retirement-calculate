@@ -151,7 +151,7 @@ body{
 .results{
     animation-name: slideInRight;
     animation-duration: 0.5s;
-    box-shadow: 0px 0px 10px 3px rgb(100, 100, 100);
+    box-shadow: 0px 0px 4px 3px rgb(137, 137, 137);
     background-color: white;
     width: 650px;
     height: 350px;
