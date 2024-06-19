@@ -27,6 +27,7 @@ body{
   animation-name: slideInRight;
   animation-duration: 0.5s;
   text-align: center;
+  margin-top: 15px;
 }
 .header a{
     font-family: 'Bebas Neue', sans-serif;
