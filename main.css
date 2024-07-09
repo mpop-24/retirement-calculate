@@ -18,7 +18,7 @@
 }
 *{
   font-family: sans-serif;
-  color: rgba(51, 25, 25, 0.678);
+  color: black;
 }
 body{
   margin: 0;
@@ -30,7 +30,7 @@ body{
   margin-top: 15px;
 }
 .header a{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family:sans-serif;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
@@ -55,14 +55,14 @@ body{
 .navbar li a{
     position: relative;
     text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: sans-serif;
 }
 
 .navbar li a::after{
   content: '';
   height: 2.5px;
   width: 100%;
-  background-color:rgba(6, 164, 6, 0.732);
+  background-color:black;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -96,9 +96,9 @@ body{
   }
   
 .heading h3 {
-  color: rgba(6, 164, 6, 0.732);
+  color: black;
     font-size: 25px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family:   sans-serif;
   }
   
 .input-group {
@@ -106,7 +106,7 @@ body{
   }
   
 .input-group label {
-  color: rgba(6, 164, 6, 0.732);
+  color: black;
   margin-bottom: 5px;
   font-size:15px;
     display: block;
@@ -119,7 +119,7 @@ body{
   text-align: center;
     max-width: 100%;
     padding: 12px;
-    border: 1px solid rgba(6, 164, 6, 0.732);
+    border: 1px solid black;
     outline: none;
     border-radius: 2.5px;
   }
@@ -135,8 +135,8 @@ body{
   border-radius: 3px;
   width: 225px;
   height: 40px;
-  border: 1px solid rgba(6, 164, 6, 0.732);
-  color: rgba(18, 112, 18, 0.732);
+  border: 1px solid black;
+  color: black;
 }
 .input-group button {
     display: inline-block;
@@ -144,17 +144,17 @@ body{
     max-width: 100%;
     width: 200px;
     padding: 12px;
-    border: 1px solid rgba(6, 164, 6, 0.732);
+    border: 1px solid black;
     outline: none;
     border-radius: 2.5px;
-    background-color: rgba(6, 164, 6, 0.732);
+    background-color: black;
     color: white;
   }
 
 .results{
     animation-name: slideInRight;
     animation-duration: 0.5s;
-    box-shadow: 0px 0px 4px 3px rgba(6, 164, 6, 0.732);
+    box-shadow: 0px 0px 5px 0px black;
     background-color: white;
     width: 650px;
     height: 350px;
