@@ -145,15 +145,11 @@ body{
 .results{
   animation-name: slideInRight;
   animation-duration: 0.75s;
-    box-shadow: 0px 0px 4px 3px black;
-    width: 650px;
     margin-top: 50px;
-    height: 350px;
     padding: 20px;
     display: inline-block;
     align-self: center;
     text-align: center;
-    background-color: white;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
@@ -161,7 +157,7 @@ body{
 #text, #text2, #text3 {
     text-align: center;
     margin-top: 0%;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: normal;
   }
 
@@ -203,6 +199,9 @@ body{
   }
   .results{
     display: inline-block;
+  }
+  #text, #text2{
+    font-size: 20px;
   }
 }
 

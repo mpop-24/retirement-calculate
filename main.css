@@ -152,30 +152,29 @@ body{
   }
 
 .results{
-    animation-name: slideInRight;
-    animation-duration: 0.5s;
-    box-shadow: 0px 0px 5px 0px black;
-    background-color: white;
-    width: 650px;
-    height: 350px;
+    display: inline-block;
+    text-align: left;
+    align-items: center;
     padding: 20px;
-    align-self: center;
-    text-align: center;
     margin-bottom: 10px;
     padding-bottom: 10px
 }
 
 #text {
-    text-align: center;
+    display: inline-block;
+    text-align: left;
     margin-top: 0%;
     font-size: 25px;
     font-weight: normal;
   }
 #text2 {
+  display: inline-block;
+    text-align: left;
   font-size: 17px;
 }
 #text3{
-  text-align: center;
+  display: inline-block;
+  text-align: left;
   margin-top: 20px;
   font-size: 15px;
   font-weight: 200;
@@ -248,11 +247,11 @@ body{
     grid-template-columns: 1fr 1fr; 
     grid-gap: 30px; 
     }
-  .results{
-    margin-right: 30px;
-  }
   .calculator{
     margin-left: 100px;
+  }
+  #text{
+    font-size: 35px;
   }
 }
 
@@ -271,25 +270,21 @@ body{
     display: inline-block;
     margin: auto;
   }
-  .results{
-    display: inline-block;
+  #text{
+    font-size: 35px;
   }
 }
 @media (max-width: 975px){
-    .bg-image{
-        width: 100vw;
-        height: 400px;
+    #text{
+      font-size: 35px;
     }
-    img{
-        width: 100vw;
-        height: 400px;
-        object-fit: cover;
+    .results{
+      text-align: center;
     }
 }
 @media (max-width: 745px){
-  .results{
-    width:550px;
-    height: 350px;
+  #text{
+    font-size: 35px;
   }
 }
 @media (max-width: 700px){
@@ -298,35 +293,25 @@ body{
     text-align: center;
     width: 650px;
 }
-@media (max-width: 635px){
   .results{
     text-align: center;
-    width:450px;
-    height: 250px;
   }
+@media (max-width: 635px){
   .article-text{
     width: 600px;
+}
+#text{
+  font-size: 20px;
 }
 }
 
 @media (max-width: 655px) {
-    .bg-image{
-        width: 100vw;
-        height: 300px;
-    }
-    img{
-        width: 100vw;
-        height: 300px;
-        object-fit: cover;
-    }
+  #text{
+    font-size: 20px;
+  }
 }
 }
 @media (max-width: 530px){
-  .results{
-    text-align: center;
-    width:350px;
-    height: 175px;
-  }
   #text {
     text-align: center;
     margin-top: 0%;
@@ -335,17 +320,6 @@ body{
   }
   .article-text{
     width: 500px;
-}
-
-.results a{
-  display: inline-block;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: normal;
-}
-
-#text, #text2, #text3{
-  font-size: 10px;
 }
 
 }
@@ -362,11 +336,10 @@ body{
 }
 
 @media (max-width: 425px){
-  .results{
-    width: 300px;
-    height: 150px;
-  }
   .article-text{
     width: 350px;
+}
+#text{
+  font-size: 20px;
 }
 }
