@@ -1,0 +1,14 @@
+[
+    {
+        "symbol": "QQQ",
+        "price": 480
+    },
+    {
+        "symbol": "SPY",
+        "price": 562.07
+    },
+    {
+        "symbol": "AAPL",
+        "price": 226.84
+    }
+]

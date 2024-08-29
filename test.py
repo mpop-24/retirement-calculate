@@ -1,29 +1,32 @@
-try:
-    # For Python 3.0 and later
-    from urllib.request import urlopen
-except ImportError:
-    # Fall back to Python 2's urllib2
-    from urllib2 import urlopen
-import certifi
 import json
+import certifi
+from urllib.request import urlopen
 
 def get_jsonparsed_data(url):
-    response = urlopen(url, cafile=certifi.where())
-    data = response.read().decode("utf-8")
-    return json.loads(data)
+        response = urlopen(url, cafile=certifi.where())
+        data = response.read().decode("utf-8")
+        return json.loads(data)
 
-def find_symbol(symbol, url):
+def find_symbol(url):
+    symbols = ['QQQ', 'SPY', 'AAPL']  
+    stock_data = []
     stock_list = get_jsonparsed_data(url)
-    for stock in stock_list:
-        if stock['symbol'] == symbol:
-            return stock
-    return None
+    
+    if stock_list:
+        for symbol in symbols:
+            for stock in stock_list:
+                if stock['symbol'] == symbol:
+                    stock_data.append({'symbol': symbol, 'price': stock['price']})
+                    break
+    
+    return stock_data
+
+def write_to_json_file(stock_data, filename):
+    with open(filename, 'w') as json_file:
+        json.dump(stock_data, json_file, indent=4)
 
 url = "https://financialmodelingprep.com/api/v3/stock/list?apikey=wwRCBdU2wv23s2rQu3kjYkzwvO7iaNyr"
-symbol = "SSGLX"
-stock_data = find_symbol(symbol, url)
+stock_prices = find_symbol(url)
 
-if stock_data:
-    print(f"Found symbol {symbol}: {stock_data}")
-else:
-    print(f"Symbol {symbol} not found in the list.")
+# Write the stock prices to a JSON file
+write_to_json_file(stock_prices, 'stock_prices.json')
