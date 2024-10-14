@@ -4,7 +4,7 @@
 
    <url>
 
-      <loc>http://www.retirementcalculate.com/</loc>
+      <loc>http://www.financecalculate.com/</loc>
 
       <lastmod>2024-05-05</lastmod>
 
@@ -15,7 +15,7 @@
    </url>
    <url>
 
-      <loc>http://www.retirementcalculate.com/index</loc>
+      <loc>http://www.financecalculate.com.com/index</loc>
 
       <lastmod>2024-05-05</lastmod>
 
@@ -26,7 +26,7 @@
    </url>
    <url>
 
-      <loc>http://www.retirementcalculate.com/how-much-do-you-need.html</loc>
+      <loc>http://www.financecalculate.com.com/how-much-do-you-need.html</loc>
 
       <changefreq>monthly</changefreq>
 
@@ -36,7 +36,7 @@
 
    <url>
 
-      <loc>http://www.retirementcalculate.com/how-to-start.html</loc>
+      <loc>http://www.financecalculate.com.com/how-to-start.html</loc>
 
       <lastmod>2024-05-05</lastmod>
 
@@ -45,4 +45,14 @@
         <priority>0.6</priority>
    </url>
 
+   <url>
+
+      <loc>http://www.financecalculate.com.com/loan-calculator.html</loc>
+
+      <lastmod>2024-010-013</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+        <priority>0.6</priority>
+   </url>
 </urlset>

@@ -141,7 +141,39 @@ body{
     background-color: black;;
     color: white;
   }
-
+  @keyframes slide {
+    from{
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(-100%)
+    }
+  }
+  .stocks{
+    margin-top: -35px;
+    margin-bottom: -10px;
+    font-size: 20px;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .slide-track{
+    display: inline-block;
+    place-items: center;
+    padding: 20px;
+    animation: 17s slide infinite linear;
+  }
+  .slide{
+    display: inline-block;
+    padding: 0 40px;
+  }
+  .slide p{
+    color: green;
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
 .results{
   animation-name: slideInRight;
   animation-duration: 0.75s;

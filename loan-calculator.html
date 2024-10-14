@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header1">
+        <div class="header"><a href="index.html">Finance Calculator</a></div>
+       </div>
+   <div class="navbar">
+       <ul>
+           <li><a href="index.html">Calculator</a></li>
+           <li><a href="how-much-do-you-need.html">How much do I need</a></li>
+           <li><a href="loan-calculator.html">Loan Calculator</a></li>
+           <li><a href="how-to-start.html">How to start</a></li>
+       </ul>
+   </div>
+   <div class="stocks">
+       <!--SLIDES-->
+       <div class="slide-track">
+           <div class="slide">
+               <p id="s&p-stock-label">S&P 500(SPY):</p><p id="s&p-price"></p>
+           </div>
+           <div class="slide">
+               <p id="dow-stock-label">DOW JONES(DIA):</p><p id="dow-price"></p>
+           </div>
+           <div class="slide">
+           <p id="nas-stock-label">NASDAQ(INVESCO QQQ):</p><p id="nas-price"></p>
+           </div>
+           <div class="slide"><p id="s&p-stock-label">S&P 500(SPY):</p>
+               <p id="s&p-price2"></p>
+           </div>
+           <div class="slide">
+               <p id="dow-stock-label">DOW JONES(DIA):</p><p id="dow-price2"></p>
+           </div>
+           <div class="slide">
+               <p id="nas-stock-label">NASDAQ(INVESCO QQQ):</p><p id="nas-price2"></p>
+           </div>
+   </div>
+   <div class="slide-track">
+       <div class="slide">
+           <p id="s&p-stock-label">S&P 500(SPY):</p><p id="s&p-price3"></p>
+       </div>
+       <div class="slide">
+           <p id="dow-stock-label">DOW JONES(DIA):</p><p id="dow-price3"></p>
+       </div>
+       <div class="slide">
+       <p id="nas-stock-label">NASDAQ(INVESCO QQQ):</p><p id="nas-price3"></p>
+       </div>
+       <div class="slide"><p id="s&p-stock-label">S&P 500(SPY):</p>
+           <p id="s&p-price4"></p>
+       </div>
+       <div class="slide">
+           <p id="dow-stock-label">DOW JONES(DIA):</p><p id="dow-price4"></p>
+       </div>
+       <div class="slide">
+           <p id="nas-stock-label">NASDAQ(INVESCO QQQ):</p><p id="nas-price4"></p>
+       </div>
+   </div>
+</div>
+<section class="container">
+    <div class="calculator">
+         <div class="heading">
+             <h3>Calculator</h3>
+         </div>
+         <form action="" id="retirement-form">
+             <div class="input-group">
+                 <label for="initial-amount" class="label1">What is the remaining loan balance?</label>
+                 <input type="number" id="p">
+             </div>
+             <div class="input-group">
+                <label for="initial-amount" class="label1">What is your monthly payment?</label>
+                <input type="number" id="m">
+            </div>
+            <div class="input-group">
+                <label for="initial-amount" class="label1">What is your interest rate?</label>
+                <input type="number" id="r">
+            </div>
+             <div class="input-group">
+                 <button id="button">Calculate</button>
+             </div>
+         </form>
+     </div>
+     <div class="results">
+         <h3 id="text"></h3>
+     </div>
+ </section>
+    <script src="script3.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
