@@ -1,14 +1,14 @@
 [
-  {
-    "symbol": "AAPL",
-    "price": 470
-  },
-  {
-    "symbol": "DDD",
-    "price": 428
-  },
-  {
-    "symbol": "LLL",
-    "price": 110
-  }
+    {
+        "symbol": "DIA",
+        "price": 434.51
+    },
+    {
+        "symbol": "QQQ",
+        "price": 496.57
+    },
+    {
+        "symbol": "SPY",
+        "price": 585.75
+    }
 ]
